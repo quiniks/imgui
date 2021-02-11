@@ -1,9 +1,9 @@
-project "ImGui"
+project "imgui"
 	kind "StaticLib"
 	language "C++"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+    targetdir ("build/bin/" .. outputDir .. "/%{prj.name}")
+    objdir ("build/obj/" .. outputDir .. "/%{prj.name}")
 
 	files
 	{
